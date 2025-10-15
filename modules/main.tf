@@ -17,3 +17,8 @@ resource "null_resource" "print_date" {
   }
 }
 
+
+module "dateprinter" {
+  source  = "app.terraform.io/Terraform-Training-ISE/dateprinter/IlyesSemlali"
+  version = "0.1.0"
+}
