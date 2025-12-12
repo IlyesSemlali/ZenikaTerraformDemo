@@ -4,14 +4,9 @@ resource "null_resource" "example1" {
   }
 }
 
-resource "null_resource" "example2" {
-  provisioner "local-exec" {
-    command = "echo Hello from null_resource 2"
-  }
-
-  depends_on = [
-    null_resource.example1
-  ]
+module "dateprinter" {
+  source  = "app.terraform.io/Terraform-Training-ISE/dateprinter"
+  version = "0.2.0"
 }
 
 resource "null_resource" "example3" {
@@ -26,4 +21,3 @@ resource "null_resource" "example3" {
     null_resource.example2
   ]
 }
-
