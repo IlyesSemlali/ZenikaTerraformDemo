@@ -1,6 +1,6 @@
 # Configure Terraform itself
 terraform {
-  required_version = "~> 1.14.0"
+  required_version = "~> 1.15.0"
   backend "remote" {
     organization = "Terraform-Training-ISE"
     workspaces {
