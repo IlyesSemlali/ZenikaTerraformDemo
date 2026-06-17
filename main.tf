@@ -5,7 +5,7 @@ resource "null_resource" "example1" {
 }
 
 module "dateprinter" {
-  source  = "app.terraform.io/Terraform-Training-ISE/dateprinter"
+  source  = "app.terraform.io/Terraform-Training-ISE/dateprinter/IlyesSemlali"
   version = "0.2.0"
 }
 
